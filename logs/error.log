@@ -1,0 +1,1141 @@
+2025-08-24T18:15:40.453Z - ERROR - ValidationError: User validation failed: companyDetails: Cast to string failed for value "{ name: 'JD Corp', type: 'SME', years: '5' }" (type Object) at path "companyDetails"
+    at Document.invalidate (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/document.js:3358:32)
+    at model.$set (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/document.js:1480:12)
+    at model.$set (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/document.js:1132:16)
+    at model.Document (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/document.js:178:12)
+    at model.Model (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/model.js:127:12)
+    at new model (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/model.js:4834:15)
+    at register (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/controllers/authController.js:15:18)
+2025-08-24T18:19:39.709Z - ERROR - Error: Invalid login: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 5b1f17b1804b1-45b4e26944dsm83462135e9.2 - gsmtp
+    at SMTPConnection._formatError (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:1588:34)
+    at SMTPConnection.<anonymous> (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:556:26)
+    at SMTPConnection._processResponse (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:993:20)
+    at SMTPConnection._onData (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:774:14)
+    at SMTPConnection._onSocketData (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+    at TLSSocket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+2025-08-24T18:23:43.215Z - ERROR - Error: Email déjà utilisé
+    at register (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/controllers/authController.js:12:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-08-24T18:31:47.449Z - ERROR - Error: Identifiants invalides
+    at login (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/controllers/authController.js:30:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-08-25T09:49:08.728Z - ERROR - Error: Déjà abonné
+    at subscribeNewsletter (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/controllers/contactController.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-08-25T16:11:01.887Z - ERROR - Error: Missing credentials for "PLAIN"
+    at SMTPConnection._formatError (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:809:19)
+    at SMTPConnection.login (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:454:38)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-transport/index.js:272:32
+    at SMTPConnection.<anonymous> (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:215:17)
+    at Object.onceWrapper (node:events:638:28)
+    at SMTPConnection.emit (node:events:524:28)
+    at SMTPConnection._actionEHLO (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:1371:14)
+    at SMTPConnection._processResponse (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:993:20)
+    at SMTPConnection._onData (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:774:14)
+    at SMTPConnection._onSocketData (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+2025-08-25T16:13:26.564Z - ERROR - Error: Missing credentials for "PLAIN"
+    at SMTPConnection._formatError (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:809:19)
+    at SMTPConnection.login (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:454:38)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-transport/index.js:272:32
+    at SMTPConnection.<anonymous> (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:215:17)
+    at Object.onceWrapper (node:events:638:28)
+    at SMTPConnection.emit (node:events:524:28)
+    at SMTPConnection._actionEHLO (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:1371:14)
+    at SMTPConnection._processResponse (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:993:20)
+    at SMTPConnection._onData (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:774:14)
+    at SMTPConnection._onSocketData (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+2025-08-26T13:29:16.997Z - ERROR - Error: Missing credentials for "PLAIN"
+    at SMTPConnection._formatError (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:809:19)
+    at SMTPConnection.login (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:454:38)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-transport/index.js:272:32
+    at SMTPConnection.<anonymous> (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:215:17)
+    at Object.onceWrapper (node:events:638:28)
+    at SMTPConnection.emit (node:events:524:28)
+    at SMTPConnection._actionEHLO (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:1371:14)
+    at SMTPConnection._processResponse (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:993:20)
+    at SMTPConnection._onData (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:774:14)
+    at SMTPConnection._onSocketData (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+2025-08-26T13:40:06.436Z - ERROR - ReferenceError: User is not defined
+    at submitEnrollment (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/controllers/enrollmentController.js:33:26)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/express/lib/router/route.js:149:13)
+    at handleValidationErrors (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/middlewares/validate.js:8:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/express/lib/router/route.js:149:13)
+    at middleware (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-08-26T13:41:09.224Z - ERROR - ReferenceError: User is not defined
+    at submitEnrollment (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/controllers/enrollmentController.js:33:26)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/express/lib/router/route.js:149:13)
+    at handleValidationErrors (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/middlewares/validate.js:8:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/express/lib/router/route.js:149:13)
+    at middleware (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-08-28T12:33:34.895Z - ERROR - Error: Identifiants invalides
+    at login (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/controllers/authController.js:28:13)
+2025-08-28T12:34:02.252Z - ERROR - Error: Identifiants invalides
+    at login (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/controllers/authController.js:28:13)
+2025-08-28T12:36:36.270Z - ERROR - Error: Identifiants invalides
+    at login (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/controllers/authController.js:28:13)
+2025-08-28T12:50:01.411Z - ERROR - Error: Identifiants invalides
+    at login (file:///Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/controllers/authController.js:28:13)
+2025-08-30T18:09:15.443Z - ERROR - ValidationError: Validation failed: status: `approve` is not a valid enum value for path `status`.
+    at _done (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:231:19)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:207:11
+    at schemaPath.doValidate.updateValidator (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:165:13)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-08-30T18:09:17.325Z - ERROR - ValidationError: Validation failed: status: `approve` is not a valid enum value for path `status`.
+    at _done (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:231:19)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:207:11
+    at schemaPath.doValidate.updateValidator (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:165:13)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-08-30T18:09:18.069Z - ERROR - ValidationError: Validation failed: status: `approve` is not a valid enum value for path `status`.
+    at _done (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:231:19)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:207:11
+    at schemaPath.doValidate.updateValidator (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:165:13)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-08-30T18:09:20.125Z - ERROR - ValidationError: Validation failed: status: `approve` is not a valid enum value for path `status`.
+    at _done (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:231:19)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:207:11
+    at schemaPath.doValidate.updateValidator (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:165:13)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-08-30T18:09:20.307Z - ERROR - ValidationError: Validation failed: status: `approve` is not a valid enum value for path `status`.
+    at _done (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:231:19)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:207:11
+    at schemaPath.doValidate.updateValidator (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:165:13)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-08-30T18:09:27.502Z - ERROR - ValidationError: Validation failed: status: `reject` is not a valid enum value for path `status`.
+    at _done (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:231:19)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:207:11
+    at schemaPath.doValidate.updateValidator (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:165:13)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-08-30T18:09:28.377Z - ERROR - ValidationError: Validation failed: status: `reject` is not a valid enum value for path `status`.
+    at _done (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:231:19)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:207:11
+    at schemaPath.doValidate.updateValidator (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:165:13)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-08-30T18:09:28.623Z - ERROR - ValidationError: Validation failed: status: `reject` is not a valid enum value for path `status`.
+    at _done (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:231:19)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:207:11
+    at schemaPath.doValidate.updateValidator (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:165:13)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-08-30T18:09:28.851Z - ERROR - ValidationError: Validation failed: status: `reject` is not a valid enum value for path `status`.
+    at _done (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:231:19)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:207:11
+    at schemaPath.doValidate.updateValidator (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:165:13)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-08-30T18:09:38.199Z - ERROR - ValidationError: Validation failed: status: `approve` is not a valid enum value for path `status`.
+    at _done (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:231:19)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:207:11
+    at schemaPath.doValidate.updateValidator (/Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/helpers/updateValidators.js:165:13)
+    at /Users/macbookpro/Desktop/Baysawar/backend-bay-sa-waar/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-09-03T09:07:35.334Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:07:35.381Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:07:36.327Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:07:36.622Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:08:46.630Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:08:46.748Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:08:46.940Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:08:47.213Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:09:00.065Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:09:00.084Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:09:00.352Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:09:00.631Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:10:30.345Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:10:30.609Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:10:44.338Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:10:44.592Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:11:11.312Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:11:11.560Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:11:17.314Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:11:17.576Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:11:19.079Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:11:19.332Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:11:19.668Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:11:19.761Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:11:19.917Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:11:20.153Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:11:44.337Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:11:44.593Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:15:12.324Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:15:12.672Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:15:27.377Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:15:27.626Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:15:46.663Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:15:46.903Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:15:54.057Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:15:54.063Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:15:54.468Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:15:54.721Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:19:49.203Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:21:18.237Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:22:24.578Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at getDashboardData (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/dashboardController.js:11:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:25:04.299Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:25:04.323Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:27:42.963Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:28:09.810Z - ERROR - CastError: Cast to ObjectId failed for value "my-status" (type string) at path "_id" for model "Enrollment"
+    at SchemaObjectId.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getEnrollmentById (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/enrollmentController.js:142:24)
+2025-09-03T09:33:05.805Z - ERROR - Error: Identifiants invalides
+    at login (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:38:01.150Z - ERROR - Error: Identifiants invalides
+    at login (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T09:38:13.434Z - ERROR - Error: Identifiants invalides
+    at login (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-03T11:30:29.105Z - ERROR - TokenExpiredError: jwt expired
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:101:10)
+    at getMe (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:346:12)
+2025-09-03T11:30:29.110Z - ERROR - TokenExpiredError: jwt expired
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:101:10)
+    at getMe (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:346:12)
+2025-09-04T10:50:40.122Z - ERROR - ValidationError: Product validation failed: stock: Path `stock` is required., price: Path `price` is required., description: Path `description` is required., name: Path `name` is required.
+    at Document.invalidate (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:3358:32)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-09-04T10:50:40.136Z - ERROR - ValidationError: BlogPost validation failed: author: Path `author` is required., content: Path `content` is required., title: Path `title` is required.
+    at Document.invalidate (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:3358:32)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-09-04T11:29:55.551Z - ERROR - ValidationError: Product validation failed: specifications: Cast to embedded failed for value "[]" (type string) at path "specifications" because of "ObjectParameterError"
+    at Document.invalidate (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:3358:32)
+    at model.$set (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:1480:12)
+    at model.$set (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:1132:16)
+    at model.Document (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:178:12)
+    at model.Model (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/model.js:127:12)
+    at new model (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/model.js:4834:15)
+    at createProduct (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/productController.js:42:21)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:91:12)
+2025-09-04T11:30:27.699Z - ERROR - ValidationError: Product validation failed: specifications: Cast to embedded failed for value "[]" (type string) at path "specifications" because of "ObjectParameterError"
+    at Document.invalidate (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:3358:32)
+    at model.$set (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:1480:12)
+    at model.$set (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:1132:16)
+    at model.Document (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:178:12)
+    at model.Model (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/model.js:127:12)
+    at new model (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/model.js:4834:15)
+    at createProduct (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/productController.js:42:21)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:91:12)
+2025-09-04T11:31:35.200Z - ERROR - ValidationError: Product validation failed: specifications: Cast to embedded failed for value "[]" (type string) at path "specifications" because of "ObjectParameterError"
+    at Document.invalidate (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:3358:32)
+    at model.$set (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:1480:12)
+    at model.$set (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:1132:16)
+    at model.Document (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:178:12)
+    at model.Model (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/model.js:127:12)
+    at new model (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/model.js:4834:15)
+    at createProduct (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/productController.js:42:21)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:91:12)
+2025-09-04T11:39:55.501Z - ERROR - undefined
+2025-09-04T11:57:25.611Z - ERROR - MongoServerError: E11000 duplicate key error collection: test.blogposts index: slug_1 dup key: { slug: null }
+    at InsertOneOperation.execute (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async Collection.insertOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/collection.js:157:16)
+2025-09-04T11:57:49.501Z - ERROR - MongoServerError: E11000 duplicate key error collection: test.blogposts index: slug_1 dup key: { slug: null }
+    at InsertOneOperation.execute (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async Collection.insertOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/collection.js:157:16)
+2025-09-04T11:58:34.400Z - ERROR - MongoServerError: E11000 duplicate key error collection: test.blogposts index: slug_1 dup key: { slug: null }
+    at InsertOneOperation.execute (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async Collection.insertOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/collection.js:157:16)
+2025-09-04T11:59:06.131Z - ERROR - MongoServerError: E11000 duplicate key error collection: test.blogposts index: slug_1 dup key: { slug: null }
+    at InsertOneOperation.execute (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async Collection.insertOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/collection.js:157:16)
+2025-09-04T11:59:35.978Z - ERROR - MongoServerError: E11000 duplicate key error collection: test.blogposts index: slug_1 dup key: { slug: null }
+    at InsertOneOperation.execute (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async Collection.insertOne (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongodb/lib/collection.js:157:16)
+2025-09-04T12:34:23.055Z - ERROR - TokenExpiredError: jwt expired
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:101:10)
+    at getMe (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:346:12)
+2025-09-04T12:34:23.088Z - ERROR - TokenExpiredError: jwt expired
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:101:10)
+    at getMe (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:346:12)
+2025-09-04T17:40:03.647Z - ERROR - TokenExpiredError: jwt expired
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:101:10)
+    at getMe (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:346:12)
+2025-09-04T17:40:03.663Z - ERROR - TokenExpiredError: jwt expired
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:101:10)
+    at getMe (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:346:12)
+2025-09-04T19:02:51.236Z - ERROR - MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2025-09-04T19:05:46.660Z - ERROR - MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2025-09-04T19:07:38.125Z - ERROR - MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2025-09-05T00:48:09.894Z - ERROR - Error: aborted
+    at abortIncoming (node:_http_server:809:17)
+    at socketOnClose (node:_http_server:803:3)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:351:12)
+2025-09-05T00:50:01.171Z - ERROR - ValidationError: Product validation failed: specifications: Parameter "obj" to Document() must be an object, got "" (type string)
+    at Document.invalidate (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:3358:32)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:3119:17
+    at SchemaDocumentArray.doValidate (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/schema/documentArray.js:247:12)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/mongoose/lib/document.js:3111:18
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-09-08T08:55:06.203Z - ERROR - Error: Déjà abonné
+    at subscribeNewsletter (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/contactController.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-08T08:55:59.092Z - ERROR - Error: Déjà abonné
+    at subscribeNewsletter (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/contactController.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-08T08:56:35.530Z - ERROR - Error: Déjà abonné
+    at subscribeNewsletter (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/contactController.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-08T09:01:36.162Z - ERROR - Error: Déjà abonné
+    at subscribeNewsletter (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/contactController.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-08T09:05:23.322Z - ERROR - Error: Déjà abonné
+    at subscribeNewsletter (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/contactController.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-08T09:05:55.033Z - ERROR - Error: Déjà abonné
+    at subscribeNewsletter (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/contactController.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-08T09:06:55.250Z - ERROR - Error: Déjà abonné
+    at subscribeNewsletter (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/contactController.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-08T09:07:17.900Z - ERROR - Error: Déjà abonné
+    at subscribeNewsletter (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/contactController.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T17:35:27.611Z - ERROR - TokenExpiredError: jwt expired
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:101:10)
+    at getMe (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:346:12)
+2025-09-10T17:35:27.682Z - ERROR - TokenExpiredError: jwt expired
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/jsonwebtoken/verify.js:101:10)
+    at getMe (file:///Users/macbookpro/Desktop/BayySaWaar/baysawarr/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/macbookpro/Desktop/BayySaWaar/baysawarr/node_modules/express/lib/router/index.js:346:12)
+2025-10-25T13:04:05.171Z - ERROR - TokenExpiredError: jwt expired
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/jsonwebtoken/verify.js:101:10)
+    at getMe (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:346:12)
+2025-10-25T13:04:05.180Z - ERROR - TokenExpiredError: jwt expired
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/jsonwebtoken/verify.js:101:10)
+    at getMe (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:346:12)
+2025-10-31T23:53:07.075Z - ERROR - SyntaxError: Unexpected token 'o', "formations" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at submitEnrollment (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/enrollmentController.js:72:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-31T23:53:44.118Z - ERROR - SyntaxError: Unexpected token 'a', "autonomisa"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at submitEnrollment (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/enrollmentController.js:72:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:06:45.401Z - ERROR - SyntaxError: Unexpected token 'a', "autonomisa"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at submitEnrollment (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/enrollmentController.js:72:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T00:07:53.224Z - ERROR - ValidationError: Enrollment validation failed: businessType: Path `businessType` is required., type: Path `type` is required., companyName: Path `companyName` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-01T00:30:05.377Z - ERROR - JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/jsonwebtoken/verify.js:70:17)
+    at getMe (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:175:3)
+2025-11-01T00:30:05.387Z - ERROR - JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/jsonwebtoken/verify.js:70:17)
+    at getMe (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/authController.js:47:25)
+    at Layer.handle [as handle_request] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:280:10)
+    at router.handle (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/express/lib/router/index.js:175:3)
+2025-11-01T11:53:03.418Z - ERROR - ReferenceError: jwt is not defined
+    at submitEnrollment (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/enrollmentController.js:63:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T11:57:56.056Z - ERROR - ReferenceError: Cannot access 'enrollment' before initialization
+    at submitEnrollment (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/enrollmentController.js:73:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T12:04:50.003Z - ERROR - ReferenceError: Cannot access 'enrollment' before initialization
+    at submitEnrollment (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/enrollmentController.js:73:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-01T16:56:03.390Z - ERROR - MongoServerSelectionError: connection <monitor> to 65.62.28.250:27017 timed out
+    at Topology.selectServer (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongodb/lib/sdam/topology.js:326:38)
+    at async tryOperation (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongodb/lib/operations/execute_operation.js:192:22)
+    at async executeOperation (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async AggregationCursor._initialize (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongodb/lib/cursor/aggregation_cursor.js:56:26)
+    at async AggregationCursor.cursorInit (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongodb/lib/cursor/abstract_cursor.js:632:27)
+    at async AggregationCursor.fetchBatch (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongodb/lib/cursor/abstract_cursor.js:666:13)
+    at async AggregationCursor.next (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongodb/lib/cursor/abstract_cursor.js:342:17)
+    at async Collection.countDocuments (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongodb/lib/collection.js:477:21)
+    at async model.Query.exec (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:4627:63)
+    at async getAdminStats (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/adminController.js:15:33)
+2025-11-01T19:18:13.845Z - ERROR - CastError: Cast to ObjectId failed for value "admin" (type string) at path "_id" for model "Formation"
+    at SchemaObjectId.cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getFormationById (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:26:23)
+2025-11-01T19:45:39.151Z - ERROR - CastError: Cast to ObjectId failed for value "admin" (type string) at path "_id" for model "Formation"
+    at SchemaObjectId.cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getFormationById (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:26:23)
+2025-11-01T19:47:48.339Z - ERROR - CastError: Cast to ObjectId failed for value "admin" (type string) at path "_id" for model "Formation"
+    at SchemaObjectId.cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getFormationById (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:26:23)
+2025-11-01T19:47:59.062Z - ERROR - CastError: Cast to ObjectId failed for value "admin" (type string) at path "_id" for model "Formation"
+    at SchemaObjectId.cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getFormationById (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:26:23)
+2025-11-01T19:56:38.248Z - ERROR - CastError: Cast to ObjectId failed for value "admin" (type string) at path "_id" for model "Formation"
+    at SchemaObjectId.cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1258:12)
+    at SchemaType.castForQuery (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1694:17)
+    at cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:5060:12)
+    at Query._castConditions (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getFormationById (file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:26:23)
+2025-11-02T02:07:40.124Z - ERROR - ValidationError: Formation validation failed: registrations.0.userId: Path `userId` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at Subdocument.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/subdocument.js:229:12)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-02T02:07:53.045Z - ERROR - ValidationError: Formation validation failed: registrations.0.userId: Path `userId` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at Subdocument.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/subdocument.js:229:12)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-02T02:46:22.782Z - ERROR - ValidationError: Formation validation failed: registrations.0.userId: Path `userId` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at Subdocument.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/subdocument.js:229:12)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-02T02:54:10.597Z - ERROR - ValidationError: Formation validation failed: registrations.0.userId: Path `userId` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at Subdocument.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/subdocument.js:229:12)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-02T03:02:01.775Z - ERROR - ValidationError: Formation validation failed: registrations.0.userId: Path `userId` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at Subdocument.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/subdocument.js:229:12)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-02T03:04:29.177Z - ERROR - ValidationError: Formation validation failed: registrations.0.userId: Path `userId` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at Subdocument.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/subdocument.js:229:12)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-02T03:18:55.630Z - ERROR - ValidationError: Formation validation failed: registrations.0.userId: Path `userId` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at Subdocument.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/subdocument.js:229:12)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-02T03:23:14.425Z - ERROR - ValidationError: Formation validation failed: registrations.0.userId: Path `userId` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at Subdocument.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/subdocument.js:229:12)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-02T03:36:16.508Z - ERROR - ValidationError: Formation validation failed: registrations.0.userId: Path `userId` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at Subdocument.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/subdocument.js:229:12)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-02T03:41:45.529Z - ERROR - ReferenceError: mongoose is not defined
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:134:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T03:42:17.322Z - ERROR - ReferenceError: mongoose is not defined
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:134:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T11:40:20.407Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:127:48
+    at Proxy.some (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:126:53
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T11:41:34.814Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:127:48
+    at Proxy.some (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:126:53
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T14:16:25.556Z - ERROR - TypeError: id.toObject is not a function
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:194:16
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:193:55
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T14:58:36.482Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:53
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T14:58:36.637Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:53
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T14:58:36.784Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:53
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T14:58:38.606Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:53
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T14:58:38.792Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:53
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T14:58:38.940Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:53
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:03.076Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:03.250Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:03.407Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:05.513Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:05.670Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:05.817Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:10.090Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:10.262Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:13.457Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:13.595Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:15.268Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:15.429Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-02T15:07:15.597Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:66
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:60:10
+    at Array.map (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/formationController.js:58:54
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T19:37:28.919Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:56:17
+    at Proxy.some (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:55:49
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:24:06.351Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:52:17
+    at Proxy.some (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:51:49
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:24:14.728Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:52:17
+    at Proxy.some (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:51:49
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:26:58.245Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:53:17
+    at Proxy.some (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:52:49
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:29:27.886Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:53:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:30:05.703Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:53:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:30:21.130Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:57:14
+    at Proxy.some (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:56:49
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:44:06.245Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:63:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:48:35.494Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:63:38
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:51:56.712Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:61:34
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:52:52.596Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:61:34
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:54:35.891Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:63:38
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T20:58:16.789Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:63:38
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T21:03:32.846Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:63:38
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T21:08:19.928Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:63:38
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T21:20:50.903Z - ERROR - ValidationError: Event validation failed: email: Path `email` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-27T23:27:04.305Z - ERROR - ValidationError: Event validation failed: email: Path `email` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-27T23:31:49.297Z - ERROR - ValidationError: Event validation failed: email: Path `email` is required.
+    at Document.invalidate (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3358:32)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/document.js:3119:17
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongoose/lib/schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-11-27T23:47:03.547Z - ERROR - TypeError: Cannot read properties of null (reading 'email')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:97:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T23:50:45.536Z - ERROR - TypeError: Cannot read properties of undefined (reading 'toString')
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:64:25
+    at Proxy.some (<anonymous>)
+    at file:///Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/controllers/eventController.js:63:51
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-27T23:52:12.812Z - ERROR - Error: No recipients defined
+    at SMTPConnection._formatError (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/nodemailer/lib/smtp-connection/index.js:809:19)
+    at SMTPConnection._setEnvelope (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/nodemailer/lib/smtp-connection/index.js:1047:34)
+    at SMTPConnection.send (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/nodemailer/lib/smtp-connection/index.js:631:14)
+    at sendMessage (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/nodemailer/lib/smtp-transport/index.js:228:28)
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/nodemailer/lib/smtp-transport/index.js:286:25
+    at SMTPConnection._actionAUTHComplete (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/nodemailer/lib/smtp-connection/index.js:1602:9)
+    at SMTPConnection.<anonymous> (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/nodemailer/lib/smtp-connection/index.js:556:26)
+    at SMTPConnection._processResponse (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/nodemailer/lib/smtp-connection/index.js:993:20)
+    at SMTPConnection._onData (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/nodemailer/lib/smtp-connection/index.js:774:14)
+    at SMTPConnection._onSocketData (/Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+2025-11-29T14:45:30.642Z - ERROR - MongoPoolClearedError: Connection pool for ac-ln01eyj-shard-00-01.pami9gz.mongodb.net:27017 was cleared because another operation failed with: "connection <monitor> to 65.62.28.250:27017 timed out"
+    at /Users/adamaguisse/Documents/baysawaar/BayySaWaarBack/node_modules/mongodb/lib/cmap/connection_pool.js:366:77
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
