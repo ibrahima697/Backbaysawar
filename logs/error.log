@@ -1190,3 +1190,9 @@
     at model.Query.exec (/Users/macbookpro/Desktop/BaysawarFull/Backbaysawar/node_modules/mongoose/lib/query.js:4627:80)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
     at async file:///Users/macbookpro/Desktop/BaysawarFull/Backbaysawar/controllers/formationController.js:126:21
+2026-01-05T19:53:53.434Z - ERROR - ValidationError: Product validation failed: specifications: Parameter "obj" to Document() must be an object, got "" (type string)
+    at Document.invalidate (/Users/macbookpro/Desktop/Baysaawaarr/FrontBaysawaar/Backbaysawar/node_modules/mongoose/lib/document.js:3358:32)
+    at /Users/macbookpro/Desktop/Baysaawaarr/FrontBaysawaar/Backbaysawar/node_modules/mongoose/lib/document.js:3119:17
+    at SchemaDocumentArray.doValidate (/Users/macbookpro/Desktop/Baysaawaarr/FrontBaysawaar/Backbaysawar/node_modules/mongoose/lib/schema/documentArray.js:247:12)
+    at /Users/macbookpro/Desktop/Baysaawaarr/FrontBaysawaar/Backbaysawar/node_modules/mongoose/lib/document.js:3111:18
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)

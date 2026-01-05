@@ -55,7 +55,7 @@ export const getEventBySlug = asyncHandler(async (req, res) => {
 // @desc    Inscription à un événement
 // @route   POST /api/events/:slug/register
 export const registerToEvent = asyncHandler(async (req, res) => {
-  const event = await Event.findOne({ slug: req.params.slug });   
+  const event = await Event.findOne({ slug: req.params.slug });
   if (!event) {
     return res.status(404).json({ message: 'Événement non trouvé' });
   }
@@ -80,26 +80,74 @@ export const registerToEvent = asyncHandler(async (req, res) => {
   event.registrations.push({ user: userId });
   await event.save();
 
-    // Envoyer un email de confirmation à l'utilisateur
-    const user = await User.findById(userId);
-    if (user && user.email) {
-      const mailOptionsUser = {
-        from: process.env.EMAIL_USER,
-        to: user.email,
-        subject: `Confirmation d'inscription à l'événement: ${event.title}`,
-        text: `Bonjour ${user.firstName},\n\nVous êtes bien inscrit à l'événement "${event.title}" qui se tiendra du ${event.dateStart.toLocaleDateString()} au ${event.dateEnd.toLocaleDateString()} à ${event.location}.\n\nMerci de votre participation!\n\nCordialement,\nL'équipe Bayy Sa Waar`
-      };
-      await transporter.sendMail(mailOptionsUser);
-    }
-
-    // Envoyer un email de notification à l'admin
-    const mailOptionsAdmin = {
+  // Envoyer un email de confirmation à l'utilisateur
+  const user = await User.findById(userId);
+  if (user && user.email) {
+    const mailOptionsUser = {
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,
-      subject: `Nouvelle inscription à l'événement: ${event.title}`,
-      text: `L'utilisateur ${user.firstName} ${user.lastName} (${user.email}) s'est inscrit à l'événement "${event.title}".`
+      to: user.email,
+      subject: `Confirmation d'inscription à l'événement: ${event.title}`,
+      text: `Bonjour ${user.firstName},\n\nVous êtes bien inscrit à l'événement "${event.title}" qui se tiendra du ${event.dateStart.toLocaleDateString()} au ${event.dateEnd.toLocaleDateString()} à ${event.location}.\n\nMerci de votre participation!\n\nCordialement,\nL'équipe Bayy Sa Waar`
     };
-    await transporter.sendMail(mailOptionsAdmin);
+    await transporter.sendMail(mailOptionsUser);
+  }
 
-    res.status(200).json({ message: 'Inscription réussie !' });
+  // Envoyer un email de notification à l'admin
+  const mailOptionsAdmin = {
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
+    subject: `Nouvelle inscription à l'événement: ${event.title}`,
+    text: `L'utilisateur ${user.firstName} ${user.lastName} (${user.email}) s'est inscrit à l'événement "${event.title}".`
+  };
+  await transporter.sendMail(mailOptionsAdmin);
+
+  res.status(200).json({ message: 'Inscription réussie !' });
+});
+
+// @desc    Mettre à jour un événement (admin only)
+// @route   PUT /api/events/:id
+export const updateEvent = asyncHandler(async (req, res) => {
+  const { title, dateStart, dateEnd, ...rest } = req.body;
+
+  const event = await Event.findById(req.params.id);
+
+  if (!event) {
+    res.status(404);
+    throw new Error('Événement non trouvé');
+  }
+
+  // Update slug if title changes
+  let slug = event.slug;
+  if (title && title !== event.title) {
+    slug = title.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
+  }
+
+  event.title = title || event.title;
+  event.slug = slug;
+  event.description = req.body.description || event.description;
+  event.dateStart = dateStart ? new Date(dateStart) : event.dateStart;
+  event.dateEnd = dateEnd ? new Date(dateEnd) : event.dateEnd;
+  event.location = req.body.location || event.location;
+  event.maxParticipants = req.body.maxParticipants || event.maxParticipants;
+  event.priceMember = req.body.priceMember !== undefined ? req.body.priceMember : event.priceMember;
+  event.priceNonMember = req.body.priceNonMember !== undefined ? req.body.priceNonMember : event.priceNonMember;
+  event.isFeatured = req.body.isFeatured !== undefined ? req.body.isFeatured : event.isFeatured;
+  event.type = req.body.type || event.type;
+
+  const updatedEvent = await event.save();
+  res.json({ event: updatedEvent });
+});
+
+// @desc    Supprimer un événement (admin only)
+// @route   DELETE /api/events/:id
+export const deleteEvent = asyncHandler(async (req, res) => {
+  const event = await Event.findById(req.params.id);
+
+  if (!event) {
+    res.status(404);
+    throw new Error('Événement non trouvé');
+  }
+
+  await event.deleteOne();
+  res.json({ message: 'Événement supprimé' });
 });
