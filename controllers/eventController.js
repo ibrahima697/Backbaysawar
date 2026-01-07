@@ -13,20 +13,26 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+import { formatUploadData } from '../middlewares/cloudinaryUpload.js';
+
 // @desc    Créer un événement (admin only)
 // @route   POST /api/events
 export const createEvent = asyncHandler(async (req, res) => {
+  const uploadData = formatUploadData(req);
   const { title, dateStart, dateEnd, ...rest } = req.body;
   const slug = title.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
 
-  const event = await Event.create({
+  const eventData = {
     ...rest,
     title,
     slug,
-    dateStart: new Date(req.body.dateStart),
-    dateEnd: new Date(req.body.dateEnd),
-    createdBy: req.user._id
-  });
+    dateStart: new Date(dateStart),
+    dateEnd: new Date(dateEnd),
+    createdBy: req.user._id,
+    ...uploadData
+  };
+
+  const event = await Event.create(eventData);
 
   res.status(201).json({ event });
 });
@@ -108,6 +114,7 @@ export const registerToEvent = asyncHandler(async (req, res) => {
 // @route   PUT /api/events/:id
 export const updateEvent = asyncHandler(async (req, res) => {
   const { title, dateStart, dateEnd, ...rest } = req.body;
+  const uploadData = formatUploadData(req);
 
   const event = await Event.findById(req.params.id);
 
@@ -133,6 +140,11 @@ export const updateEvent = asyncHandler(async (req, res) => {
   event.priceNonMember = req.body.priceNonMember !== undefined ? req.body.priceNonMember : event.priceNonMember;
   event.isFeatured = req.body.isFeatured !== undefined ? req.body.isFeatured : event.isFeatured;
   event.type = req.body.type || event.type;
+
+  // Handle images update
+  if (uploadData.images) {
+    event.images = uploadData.images;
+  }
 
   const updatedEvent = await event.save();
   res.json({ event: updatedEvent });

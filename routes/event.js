@@ -11,16 +11,16 @@ import {
   updateEvent,
   deleteEvent
 } from '../controllers/eventController.js';
+import { uploadProductImages, handleUploadError } from '../middlewares/cloudinaryUpload.js';
 
 const router = express.Router();
 
 router.route('/')
-  .post(isAdmin, createEvent)
+  .post(isAdmin, uploadProductImages, handleUploadError, createEvent)
   .get(getAllEvents);
 
-// Place /:id routes BEFORE /:slug to avoid conflict if IDs look like slugs (though ObjectId usually doesn't conflict easily with typical slugs, it's safer to handle specific patterns or routes. But here we mix :id and :slug. To be safe, we rely on MongoDB ObjectId format being distinct enough or use specific resource path, but standard REST often shares root. Given existing structure:
 router.route('/:id')
-  .put(isAdmin, updateEvent)
+  .put(isAdmin, uploadProductImages, handleUploadError, updateEvent)
   .delete(isAdmin, deleteEvent);
 
 router.route('/:slug')
