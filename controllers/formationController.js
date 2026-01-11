@@ -59,13 +59,13 @@ export const getAllFormations = asyncHandler(async (req, res) => {
     const formationsWithMyRegistrations = formations.map(formation => {
       const myRegs = userId
         ? formation.registrations
-            .filter(r => r?.userId && r.userId.toString() === userId.toString())
-            .map(r => ({
-              _id: r._id,
-              userId: r.userId,
-              status: r.status,
-              registeredAt: r.registeredAt
-            }))
+          .filter(r => r?.userId && r.userId.toString() === userId.toString())
+          .map(r => ({
+            _id: r._id,
+            userId: r.userId,
+            status: r.status,
+            registeredAt: r.registeredAt
+          }))
         : [];
       return { ...formation.toObject(), registrations: myRegs };
     });
@@ -143,7 +143,7 @@ export const registerToFormation = asyncHandler(async (req, res) => {
 
   const userId = req.user._id;
 
-  const alreadyRegistered = formation.registrations.some(reg => 
+  const alreadyRegistered = formation.registrations.some(reg =>
     reg.userId?.toString() === userId.toString()
   );
 
@@ -194,7 +194,7 @@ export const updateRegistrationStatus = asyncHandler(async (req, res) => {
     // Optionnel : retirer de enrolledUsers si était approuvé avant
     const userId = formation.registrations[registrationIndex].userId;
     formation.enrolledUsers = formation.enrolledUsers.filter(
-      id => id.toObject() !== userId.toObject()
+      id => id.toString() !== userId.toString()
     );
   }
 

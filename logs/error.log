@@ -1212,3 +1212,21 @@
     at Socket._onTimeout (node:net:609:8)
     at listOnTimeout (node:internal/timers:594:17)
     at process.processTimers (node:internal/timers:529:7)
+2026-01-11T12:25:48.904Z - ERROR - TypeError: id.toObject is not a function
+    at file:///Users/macbookpro/Desktop/Backbaysawar/controllers/formationController.js:197:16
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/macbookpro/Desktop/Backbaysawar/controllers/formationController.js:196:55
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-11T13:06:00.372Z - ERROR - TypeError: id.toObject is not a function
+    at file:///Users/macbookpro/Desktop/Backbaysawar/controllers/formationController.js:197:16
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/macbookpro/Desktop/Backbaysawar/controllers/formationController.js:196:55
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-11T13:06:14.471Z - ERROR - TypeError: id.toObject is not a function
+    at file:///Users/macbookpro/Desktop/Backbaysawar/controllers/formationController.js:197:16
+    at Array.filter (<anonymous>)
+    at methods.<computed> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/types/array/methods/index.js:1054:24)
+    at file:///Users/macbookpro/Desktop/Backbaysawar/controllers/formationController.js:196:55
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
