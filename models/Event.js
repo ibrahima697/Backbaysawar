@@ -26,7 +26,7 @@ const eventSchema = new mongoose.Schema({
   maxParticipants: { type: Number, required: true },
   registrations: [{
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-    status: { type: String, enum: ['pending', 'approved', 'rejected', 'paid'], default: 'pending' },
+    status: { type: String, enum: ['pending', 'approved', 'rejected', 'paid'], default: 'approved' },
     paidAt: Date,
     paymentMethod: String,
     registeredAt: { type: Date, default: Date.now }
