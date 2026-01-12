@@ -87,6 +87,7 @@ export const registerToEvent = asyncHandler(async (req, res) => {
   await event.save();
 
   // Envoyer un email de confirmation à l'utilisateur
+  // Envoyer un email de confirmation à l'utilisateur
   const user = await User.findById(userId);
   if (user && user.email) {
     const mailOptionsUser = {
@@ -95,17 +96,23 @@ export const registerToEvent = asyncHandler(async (req, res) => {
       subject: `Confirmation d'inscription à l'événement: ${event.title}`,
       text: `Bonjour ${user.firstName},\n\nVous êtes bien inscrit à l'événement "${event.title}" qui se tiendra du ${event.dateStart.toLocaleDateString()} au ${event.dateEnd.toLocaleDateString()} à ${event.location}.\n\nMerci de votre participation!\n\nCordialement,\nL'équipe Bayy Sa Waar`
     };
-    await transporter.sendMail(mailOptionsUser);
-  }
 
-  // Envoyer un email de notification à l'admin
-  const mailOptionsAdmin = {
-    from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_USER,
-    subject: `Nouvelle inscription à l'événement: ${event.title}`,
-    text: `L'utilisateur ${user.firstName} ${user.lastName} (${user.email}) s'est inscrit à l'événement "${event.title}".`
-  };
-  await transporter.sendMail(mailOptionsAdmin);
+    // Send emails without blocking the response or crashing on error
+    try {
+      await transporter.sendMail(mailOptionsUser);
+
+      const mailOptionsAdmin = {
+        from: process.env.EMAIL_USER,
+        to: process.env.EMAIL_USER,
+        subject: `Nouvelle inscription à l'événement: ${event.title}`,
+        text: `L'utilisateur ${user.firstName} ${user.lastName} (${user.email}) s'est inscrit à l'événement "${event.title}".`
+      };
+      await transporter.sendMail(mailOptionsAdmin);
+    } catch (emailError) {
+      console.error('Erreur lors de l\'envoi de l\'email:', emailError);
+      // Continue without failing the request
+    }
+  }
 
   res.status(200).json({ message: 'Inscription réussie !' });
 });
