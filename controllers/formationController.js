@@ -115,7 +115,7 @@ export const deleteFormation = asyncHandler(async (req, res) => {
   const formation = await Formation.findById(req.params.id);
   if (!formation) return res.status(404).json({ message: 'Formation non trouvée' });
 
-  await formation.remove();
+  await formation.deleteOne();
   res.json({ message: 'Formation supprimée' });
 });
 
