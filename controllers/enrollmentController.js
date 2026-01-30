@@ -6,6 +6,7 @@ import crypto from 'crypto';
 import { formatUploadData } from '../middlewares/cloudinaryUpload.js';
 import jwt from 'jsonwebtoken';
 import sendEmail from '../utils/sendEmail.js';
+import { getRegistrationReceivedEmail, getAdminNotificationEmail, getApprovalEmail } from '../utils/emailTemplates.js';
 
 dotenv.config();
 
@@ -82,28 +83,15 @@ export const submitEnrollment = async (req, res, next) => {
 
         // ==== 6. Envoi des emails ====
         // ---- Email à l'utilisateur (Notification de réception) ----
-        sendEmail(email, 'Confirmation de réception de votre demande - BAY SA WAAR', `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
-            <h2 style="color: #059669;">Bonjour ${firstName} ${lastName},</h2>
-            <p>Nous avons bien reçu votre demande d'inscription pour rejoindre <strong>BAY SA WAAR</strong>.</p>
-            <p>Votre dossier est actuellement <strong>en cours d'examen</strong> par notre équipe. Vous recevrez une notification par email dès qu'une décision sera prise.</p>
-            <p>Merci de l'intérêt que vous portez à notre communauté.</p>
-            <hr style="margin:30px 0;border:0;border-top:1px solid #eee;">
-            <p style="color:#999;font-size:0.8em;">L'équipe BAY SA WAAR<br>contact@baysawaar.sn</p>
-          </div>
-        `).catch(err => console.error('Erreur email utilisateur submitEnrollment:', err));
+        sendEmail(email, 'Confirmation de réception de votre demande - BAY SA WAAR',
+            getRegistrationReceivedEmail(firstName, 'votre demande d\'adhésion'))
+            .catch(err => console.error('Erreur email utilisateur submitEnrollment:', err));
 
         // ---- Email à l'admin ----
-        sendEmail(process.env.EMAIL_USER || 'iguisse97@gmail.com', 'Nouvelle demande d\'inscription (En attente) - BAY SA WAAR', `
-          <h3>Nouvelle demande d'inscription</h3>
-          <p><strong>Nom :</strong> ${firstName} ${lastName}</p>
-          <p><strong>Email :</strong> ${email}</p>
-          <p><strong>Téléphone :</strong> ${phone}</p>
-          <p><strong>Localisation :</strong> ${city}, ${country}</p>
-          <p><strong>Entreprise :</strong> ${companyName || 'Non renseignée'}</p>
-          <hr>
-          <p><a href="https://bayy-sa-waar-front.vercel.app/admin/dashboard">Connectez-vous au dashboard pour valider ou refuser cette demande.</a></p>
-        `).catch(err => console.error('Erreur email admin submitEnrollment:', err));
+        const adminContent = `Nouvelle demande d'inscription:\nNom: ${firstName} ${lastName}\nEmail: ${email}\nTéléphone: ${phone}\nLocalisation: ${city}, ${country}\nEntreprise: ${companyName || 'Non renseignée'}`;
+        sendEmail(process.env.EMAIL_USER || 'iguisse97@gmail.com', 'Nouvelle demande d\'inscription (En attente) - BAY SA WAAR',
+            getAdminNotificationEmail('Nouvelle demande d\'adhésion', adminContent))
+            .catch(err => console.error('Erreur email admin submitEnrollment:', err));
 
         // ==== 7. Réponse ====
         res.status(201).json({
@@ -158,8 +146,11 @@ export const updateEnrollment = async (req, res, next) => {
         if (status === 'approved') {
             const user = await User.findById(enrollment.userId);
 
-            sendEmail(user.email, 'Votre inscription est approuvée !', `Félicitations ${user.firstName} ! Votre compte est actif. Connectez-vous sur https://bayy-sa-waar-front.vercel.app/login`)
-                .catch(err => console.error('Erreur email approbation:', err));
+            if (user && user.email) {
+                sendEmail(user.email, 'Votre inscription est approuvée !',
+                    getApprovalEmail(user.firstName))
+                    .catch(err => console.error('Erreur email approbation:', err));
+            }
         }
 
         res.json({ message: 'Statut mis à jour', enrollment });

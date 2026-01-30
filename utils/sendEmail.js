@@ -7,11 +7,16 @@ dotenv.config();
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const transport = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 587,
+  secure: false, // true pour 465, false pour 587 + STARTTLS
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
+  tls: {
+    rejectUnauthorized: false // ← parfois nécessaire sur Render
+  }
 });
 
 const sendWithGmail = async (to, subject, html) => {
