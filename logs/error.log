@@ -1266,3 +1266,109 @@
 2026-01-24T20:40:38.213Z - ERROR - TypeError: formation.remove is not a function
     at file:///Users/macbookpro/Desktop/Baysaawaarr/FrontBaysawaar/Backbaysawar/controllers/formationController.js:118:19
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-27T06:07:59.601Z - ERROR - MongooseError: Operation `products.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:08:09.626Z - ERROR - MongooseError: Operation `products.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:08:15.560Z - ERROR - MongooseError: Operation `events.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:08:25.574Z - ERROR - MongooseError: Operation `events.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:08:42.784Z - ERROR - MongooseError: Operation `products.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:08:52.795Z - ERROR - MongooseError: Operation `products.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:09:54.104Z - ERROR - MongooseError: Operation `events.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:10:04.115Z - ERROR - MongooseError: Operation `events.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:10:07.442Z - ERROR - MongooseError: Operation `events.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:10:17.452Z - ERROR - MongooseError: Operation `events.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:10:20.670Z - ERROR - MongooseError: Operation `blogposts.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:10:30.683Z - ERROR - MongooseError: Operation `blogposts.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:10:40.225Z - ERROR - MongooseError: Operation `blogposts.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:10:45.120Z - ERROR - MongooseError: Operation `products.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:10:50.237Z - ERROR - MongooseError: Operation `blogposts.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:10:55.130Z - ERROR - MongooseError: Operation `products.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:11:31.351Z - ERROR - MongooseError: Operation `events.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:11:41.364Z - ERROR - MongooseError: Operation `events.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:11:44.105Z - ERROR - MongooseError: Operation `blogposts.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:11:54.114Z - ERROR - MongooseError: Operation `blogposts.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:12:02.259Z - ERROR - MongooseError: Operation `products.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:12:12.271Z - ERROR - MongooseError: Operation `products.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:13:09.676Z - ERROR - MongooseError: Operation `blogposts.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:13:12.828Z - ERROR - MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-27T06:13:19.682Z - ERROR - MongooseError: Operation `blogposts.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+2026-01-29T20:02:49.316Z - ERROR - MongoServerError: E11000 duplicate key error collection: test.events index: slug_1 dup key: { slug: "meeting" }
+    at InsertOneOperation.execute (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongodb/lib/operations/insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async Collection.insertOne (/Users/macbookpro/Desktop/Backbaysawar/node_modules/mongodb/lib/collection.js:157:16)

@@ -2,10 +2,8 @@
 import asyncHandler from 'express-async-handler';
 import Event from '../models/Event.js';
 import User from '../models/User.js';
-import { Resend } from 'resend';
 import { getEventRegistrationEmail, getAdminNotificationEmail } from '../utils/emailTemplates.js';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import sendEmail from '../utils/sendEmail.js';
 
 import { formatUploadData } from '../middlewares/cloudinaryUpload.js';
 
@@ -81,27 +79,24 @@ export const registerToEvent = asyncHandler(async (req, res) => {
   await event.save();
 
   // Envoyer un email de confirmation à l'utilisateur
-  // Envoyer un email de confirmation à l'utilisateur
   const user = await User.findById(userId);
   if (user && user.email) {
     // Send emails asynchronously without blocking the response
-    resend.emails.send({
-      from: 'Bay Sa Waar <onboarding@resend.dev>',
-      to: user.email,
-      subject: `Confirmation d'inscription à l'événement: ${event.title}`,
-      html: getEventRegistrationEmail(user.firstName, event.title, `${event.dateStart.toLocaleDateString()} - ${event.dateEnd.toLocaleDateString()}`, event.location)
-    }).catch(error => {
-      console.error('Erreur Resend utilisateur:', error);
+    sendEmail(
+      user.email,
+      `Confirmation d'inscription à l'événement: ${event.title}`,
+      getEventRegistrationEmail(user.firstName, event.title, `${event.dateStart.toLocaleDateString()} - ${event.dateEnd.toLocaleDateString()}`, event.location)
+    ).catch(error => {
+      console.error('Erreur email utilisateur registerToEvent:', error);
     });
 
     const adminContent = `L'utilisateur ${user.firstName} ${user.lastName} (${user.email}) s'est inscrit à l'événement "${event.title}".`;
-    resend.emails.send({
-      from: 'Bay Sa Waar <onboarding@resend.dev>',
-      to: process.env.EMAIL_USER || 'iguisse97@gmail.com',
-      subject: `Nouvelle inscription à l'événement: ${event.title}`,
-      html: getAdminNotificationEmail(`Inscription Événement: ${event.title}`, adminContent)
-    }).catch(error => {
-      console.error('Erreur Resend admin:', error);
+    sendEmail(
+      process.env.EMAIL_USER || 'iguisse97@gmail.com',
+      `Nouvelle inscription à l'événement: ${event.title}`,
+      getAdminNotificationEmail(`Inscription Événement: ${event.title}`, adminContent)
+    ).catch(error => {
+      console.error('Erreur email admin registerToEvent:', error);
     });
   }
 

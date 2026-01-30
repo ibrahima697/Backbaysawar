@@ -2,7 +2,8 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
 import sendEmail from '../utils/sendEmail.js';
-import { getAdminNotificationEmail, getResetPasswordEmail } from '../utils/emailTemplates.js';
+import { getAdminNotificationEmail, getRegistrationReceivedEmail, getResetPasswordEmail } from '../utils/emailTemplates.js';
+import crypto from 'crypto';
 
 export const register = async (req, res, next) => {
   try {
@@ -16,7 +17,12 @@ export const register = async (req, res, next) => {
 
     sendEmail('admin@baysawaar.com', 'Nouvel enrôlement',
       getAdminNotificationEmail('Nouvel enrôlement', `Nouvel utilisateur: ${email}, rôle: ${role}`))
-      .catch(err => console.error('Erreur email register:', err));
+      .catch(err => console.error('Erreur email register admin:', err));
+
+    sendEmail(email, 'Bienvenue chez BAY SA WAAR',
+      getRegistrationReceivedEmail(firstName, 'votre compte'))
+      .catch(err => console.error('Erreur email register user:', err));
+
     res.status(201).json({ message: 'Utilisateur créé' });
   } catch (err) {
     next(err);

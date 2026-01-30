@@ -1,15 +1,13 @@
 import Enrollment from '../models/Enrollment.js';
-import { Resend } from 'resend';
 import dotenv from 'dotenv';
 import User from '../models/User.js';
 import bcrypt from 'bcryptjs';
 import crypto from 'crypto';
 import { formatUploadData } from '../middlewares/cloudinaryUpload.js';
 import jwt from 'jsonwebtoken';
+import sendEmail from '../utils/sendEmail.js';
 
 dotenv.config();
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const submitEnrollment = async (req, res, next) => {
     try {
@@ -84,13 +82,7 @@ export const submitEnrollment = async (req, res, next) => {
 
         // ==== 6. Envoi des emails ====
         // ---- Email à l'utilisateur (Notification de réception) ----
-        if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
-            // Using Resend as configured in this file
-            resend.emails.send({
-                from: 'Bay Sa Waar <onboarding@resend.dev>',
-                to: email,
-                subject: 'Confirmation de réception de votre demande - BAY SA WAAR',
-                html: `
+        sendEmail(email, 'Confirmation de réception de votre demande - BAY SA WAAR', `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
             <h2 style="color: #059669;">Bonjour ${firstName} ${lastName},</h2>
             <p>Nous avons bien reçu votre demande d'inscription pour rejoindre <strong>BAY SA WAAR</strong>.</p>
@@ -99,15 +91,10 @@ export const submitEnrollment = async (req, res, next) => {
             <hr style="margin:30px 0;border:0;border-top:1px solid #eee;">
             <p style="color:#999;font-size:0.8em;">L'équipe BAY SA WAAR<br>contact@baysawaar.sn</p>
           </div>
-        `,
-            }).catch(err => console.error('Erreur Resend utilisateur:', err));
+        `).catch(err => console.error('Erreur email utilisateur submitEnrollment:', err));
 
-            // ---- Email à l'admin ----
-            resend.emails.send({
-                from: 'Bay Sa Waar <onboarding@resend.dev>',
-                to: process.env.EMAIL_USER || 'iguisse97@gmail.com',
-                subject: 'Nouvelle demande d\'inscription (En attente) - BAY SA WAAR',
-                html: `
+        // ---- Email à l'admin ----
+        sendEmail(process.env.EMAIL_USER || 'iguisse97@gmail.com', 'Nouvelle demande d\'inscription (En attente) - BAY SA WAAR', `
           <h3>Nouvelle demande d'inscription</h3>
           <p><strong>Nom :</strong> ${firstName} ${lastName}</p>
           <p><strong>Email :</strong> ${email}</p>
@@ -116,9 +103,7 @@ export const submitEnrollment = async (req, res, next) => {
           <p><strong>Entreprise :</strong> ${companyName || 'Non renseignée'}</p>
           <hr>
           <p><a href="https://bayy-sa-waar-front.vercel.app/admin/dashboard">Connectez-vous au dashboard pour valider ou refuser cette demande.</a></p>
-        `,
-            }).catch(err => console.error('Erreur Resend admin:', err));
-        }
+        `).catch(err => console.error('Erreur email admin submitEnrollment:', err));
 
         // ==== 7. Réponse ====
         res.status(201).json({
@@ -173,12 +158,8 @@ export const updateEnrollment = async (req, res, next) => {
         if (status === 'approved') {
             const user = await User.findById(enrollment.userId);
 
-            resend.emails.send({
-                from: 'Bay Sa Waar <onboarding@resend.dev>',
-                to: user.email,
-                subject: 'Votre inscription est approuvée !',
-                text: `Félicitations ${user.firstName} ! Votre compte est actif. Connectez-vous sur https://bayy-sa-waar-front.vercel.app/login`,
-            }).catch(err => console.error('Erreur Resend approbation:', err));
+            sendEmail(user.email, 'Votre inscription est approuvée !', `Félicitations ${user.firstName} ! Votre compte est actif. Connectez-vous sur https://bayy-sa-waar-front.vercel.app/login`)
+                .catch(err => console.error('Erreur email approbation:', err));
         }
 
         res.json({ message: 'Statut mis à jour', enrollment });
@@ -186,6 +167,7 @@ export const updateEnrollment = async (req, res, next) => {
         next(err);
     }
 };
+
 
 export const deleteEnrollment = async (req, res, next) => {
     try {
